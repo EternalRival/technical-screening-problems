@@ -1,0 +1,17 @@
+{
+  "name": "technical-screening-problems",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@eternalrival/prettier-config": "^0.1.5",
+    "prettier": "^3.4.2",
+    "vitest": "^2.1.8"
+  }
+}
