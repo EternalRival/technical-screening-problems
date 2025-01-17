@@ -14,4 +14,28 @@ describe('min-stack', () => {
     expect(stack.pop()).toBe(0);
     expect(stack.getMin()).toBe(1);
   });
+
+  it('case 2', () => {
+    const stack = new MinStack();
+
+    stack.push(-1);
+    stack.push(-2);
+    stack.push(0);
+
+    expect(stack.getMin()).toBe(-2);
+  });
+
+  it('pop should update min value', () => {
+    const stack = new MinStack();
+
+    stack.push(1);
+    stack.push(0);
+    stack.push(0);
+    stack.push(0);
+    stack.push(3);
+
+    expect(stack.pop()).toBe(3);
+    expect(stack.getMin()).toBe(0);
+    expect(stack.pop()).toBe(0);
+  });
 });
